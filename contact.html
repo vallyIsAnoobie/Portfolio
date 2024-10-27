@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+input::placeholder,
+textarea::placeholder,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+input::-moz-placeholder,
+textarea::-moz-placeholder,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+    font-size: 0.875em;
+    }
+
+    input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: #ffffff;
+    font-size: 0.875em;
+    }
+
+    input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #000000;
+    font-size: 0.875em;
+    }
+
+    input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+    color: #ffffff;
+    font-size: 0.875em;
+    }
+
+    input::placeholder, textarea::placeholder {
+    color: #000000;
+    font-size: 0.875em;
+    }
+
+    input:focus::placeholder, textarea::focus:placeholder {
+    color: #ffffff;
+    font-size: 0.875em;
+    }
+
+    input::-ms-placeholder, textarea::-ms-placeholder {
+    color: #000000;
+    font-size: 0.875em;
+    }
+
+    input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+    color: #ffffff;
+    
+    }
+
+    /* on hover placeholder */
+
+    input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+    color: #808080;
+    font-size: 0.875em;
+    }
+
+    input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+    color: #808080;
+    }
+
+    input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+    color: #808080;
+    font-size: 0.875em;
+    }
+
+    input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+    color: #808080;
+    }
+
+    input:hover::placeholder, textarea:hover::placeholder {
+    color: #808080;
+    font-size: 0.875em;
+    }
+
+    input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+    color: #808080;
+    }
+
+    input:hover::placeholder, textarea:hover::placeholder {
+    color: #808080;
+    font-size: 0.875em;
+    }
+
+    input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+    color: #808080;
+    font-size: 0.875em;
+    }
+    
+
+
+.titleheader {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+input {
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #000000;
+  
+  border: solid 1px #000000;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #e0e0e0;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: #000000;
+  font-size: 0.875em;
+  font-family: 'Courier New', Courier, monospace;
+  
+  border: solid 1px #000000;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #e0e0e0;
+}
+
+#submit {
+  width: 502px;
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.875em;
+  color: #000000;
+  background: transparent;
+  
+  outline: none;
+  cursor: pointer;
+  
+  border: solid 1px #000000;
+  border-top: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+#submit:hover {
+  background: #e0e0e0;
+}
+.c-main-menu__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px ; /* Adjust top and bottom margin as needed */
+}
+
+.c-main-menu-social__link li {
+  margin: 0 10px; /* Adds space between icons */
+}
+/* Optional: Add hover effect */
+.c-main-menu-social__link:hover {
+  color: #808080; /* Adjust hover color as needed */
+}
+
+    </style>
+</head>
+<body>
+    <div class="c-magic-area c-magic-area--menu" data-target-class=".c-main-menu__link" data-tween-back="true" aria-hidden="true"></div>
+    <div class="c-magic-area c-magic-area--menu" data-target-class=".c-main-menu-social__link" data-tween-back="false" aria-hidden="true"></div>
+
+    <main id="page" class="o-page">
+        <div class="loader-overlay" id="loaderOverlay">
+            <div class="loader" id="loader"></div>
+        </div>
+        <header class="o-header">
+            <h1 class="c-logo"><a class="c-logo__link" target="_blank">L1M1N4L</a></h1>
+            <nav class="c-main-menu" aria-labelledby="mainmenulabel">
+                <h2 id="mainmenulabel" class="u-visually-hidden">Main Menu</h2>
+                <ul class="c-main-menu__list">
+                    <li><a class="c-main-menu__link" href="index.html">Home</a></li>
+                    <li><a class="c-main-menu__link" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="c-main-menu__link" href="writings.html">Writings</a></li>
+                    <li><a class="is-magic-active c-main-menu__link" href="#" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <header class="titleheader">Let's Connect</header>
+        <ul class="c-main-menu__socials">
+            <li><a href="https://github.com/L1M1N4L" class="c-main-menu-social__link" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://x.com/L1M1N4LLL" class="c-main-menu-social__link" target="_blank"><i class="fab fa-x"></i></a></li>
+            <li><a href="https://www.instagram.com/l1m1n4lll" class="c-main-menu-social__link" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://discord.gg/DGKbuYM5B5" class="c-main-menu-social__link" target="_blank"><i class="fab fa-discord"></i></a></li>
+        </ul>
+
+    <form id="form" class="topBefore">
+            
+              <input id="name" type="text" placeholder="Name">
+              <input id="email" type="text" placeholder="E-Mail">
+              <textarea id="message" type="text" placeholder="Message"></textarea>
+        <input id="submit" type="submit" value="GO!">
+      
+    </form>
+    </main>
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <!-- Lodash CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <!-- VanillaTilt CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <!-- Your custom script -->
+    <script src="script.js" defer></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var loaderOverlay = document.getElementById('loaderOverlay');
+  var content = document.getElementById('content');
+
+  // Show loader overlay
+  loaderOverlay.style.display = 'flex';
+
+  // Simulate content loading delay
+  setTimeout(function() {
+    // Hide loader overlay
+    loaderOverlay.style.display = 'none';
+
+    // Show content
+    content.style.display = 'block';
+  }, 2300); // Simulate 3 seconds loading time
+});
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+        <script>
+            document.getElementById('form').addEventListener('submit', function(event) {
+                event.preventDefault();
+        
+                const formData = {
+                    name: this.name.value,
+                    email: this.email.value,
+                    message: this.message.value
+                };
+                emailjs.init('RWvHn3Ui2ppUjdlHs');
+                emailjs.send('service_anok4ht', 'template_y9zt5p8', formData)
+                    .then(function(response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                        alert('Message sent successfully!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                        alert('Failed to send message.');
+                    });
+            });
+        
+        </script>
+</body>
+
+</html>

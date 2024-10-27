@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <button onclick="togglePopups()">Toggle Popups</button>
+
+<div id="gridBox">
+    <span id="gridGrabber1" class="gridGrabber">
+        <svg viewBox="0 0 13 13" class="boxCloser" onclick="togglePopups()">
+            <path d="M 2 2 L 11 11 M 2 11 L 11 2" />
+        </svg>
+        <strong>Popup 1</strong>
+    </span>
+    <p>This is the content of Popup 1.</p>
+</div>
+
+<div id="gridBox2">
+    <span id="gridGrabber2" class="gridGrabber">
+        <svg viewBox="0 0 13 13" class="boxCloser" onclick="togglePopups()">
+            <path d="M 2 2 L 11 11 M 2 11 L 11 2" />
+        </svg>
+        <strong>Popup 2</strong>
+    </span>
+    <p>This is the content of Popup 2.</p>
+</div>
+<script src="test.js"></script>
+</body>
+</html>

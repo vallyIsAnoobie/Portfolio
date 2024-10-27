@@ -1,0 +1,786 @@
+body {
+    background-color: #fff;
+
+    height: 100%;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+ }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start fully transparent */
+        transform: translateY(20px); /* Move slightly down */
+    }
+    100% {
+        opacity: 1; /* End fully opaque */
+        transform: translateY(0); /* End in original position */
+    }
+}
+
+@font-face {
+    font-family: 'Ham is Cute';
+    src: url('HamIsCute.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+
+    font-family: 'daniel';
+    src: url('daniel.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'jsMath-cmmi10.ttf';
+    src: url('jsMath-cmmi10.ttf');
+    font-weight: 100;
+    font-style: italic;
+
+    font-family: 'Thesignature';
+    /* Name of the custom font */
+    src: url('Thesignature.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'HOS';
+    /* Name of the custom font */
+    src: url('HOS.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+main {
+    border: #124678 2px solid;
+    padding: 20px;
+    margin: 40px;
+    height: 100%;
+
+}
+
+
+.line-top,
+.line-bottom {
+    width: 30px;
+    height: 3px;
+    background-color: #0F2F42;
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+.line-top {
+    top: 20px;
+}
+
+.line-bottom {
+    top: 30px;
+}
+
+.nav-icon.open .line-top {
+    transform: rotate(45deg);
+    top: 25px;
+}
+
+.nav-icon.open .line-bottom {
+    transform: rotate(-45deg);
+    top: 25px;
+}
+
+
+
+.nav-icon {
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+
+
+header {
+    height: 180px;
+    width: 100%;
+    display: flex;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease forwards; /* Apply the animation to the body */
+}
+
+.title {
+    font-family: 'Ham is Cute', sans-serif;
+    font-size: 140px;
+    color: #075789;
+    text-align: center;
+    transform: skewY(-2deg);
+    margin: 20px 0;
+    
+}
+
+
+.desc {
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+
+
+header {
+    height: 70px;
+    width: 100%;
+}
+
+.doggy {
+    width: 90px;
+    height: 70px;
+    position: relative;
+    left: -10%;
+    margin-bottom: 20px;
+}
+
+.dog {
+    width: 220px;
+    height: auto;
+}
+
+.girly {
+    width: 440px;
+    height: auto;
+
+}
+
+.txt {
+    font-family: 'daniel', sans-serif;
+    font-size: 60px;
+    align-items: center;
+    height: 200px;
+    padding: 20px;
+    position: relative;
+    margin: 0 auto;
+    transform: skewY(-1deg);
+
+
+}
+
+
+
+.girl {
+    width: 90px;
+    height: 70px;
+    position: relative;
+    left: 86%;
+
+
+}
+
+.arrow-svg {
+    width: 85px;
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+    transform: translateY(-85px);
+}
+
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.arrow-line,
+.arrow-head {
+    cursor: pointer;
+    stroke: #06345F;
+    stroke-linecap: round;
+    animation: bounce 1s infinite;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'jsMath-cmmi10', serif;
+    font-weight: 2;
+    color: #06345F;
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 135px;
+    font-family: 'Imbue', sans-serif;
+    text-align: center;
+    color: #06345F;
+    top: -135px;
+    position: relative;
+}
+
+#bracket {
+    font-family: 'Julia Sans One', sans-serif;
+    font-weight: 100;
+
+}
+
+.container-form {
+    width: 1500px;
+    height: 600px;
+    padding-left: 20px;
+    position: relative;
+
+}
+
+.container-abt {
+    position: relative;
+    display: flex;
+    margin-top: -180px;
+    /* Adjust the value to push it up */
+
+
+}
+
+#class {
+    font-size: 40px;
+    /* Increase font size */
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    color: #06345F;
+}
+
+.name,
+.age,
+.hobbies {
+    font-size: 90px;
+    /* Increase font size */
+    font-family: 'Thesignature', cursive;
+    padding-bottom: 6%;
+    color: #06345F;
+    padding-left: 70px;
+    position: relative;
+}
+
+.name::after,
+.age::after,
+.hobbies::after {
+    content: '';
+    display: block;
+    width: 950px;
+    /* Line length matches the element width */
+    height: 3px;
+    /* Thickness of the line */
+    background-color: #06345F;
+    /* Color of the line */
+    position: absolute;
+    bottom: 50px;
+    left: 70px;
+}
+
+
+
+.pictures {
+    flex-direction: column;
+    /* Stack pictures vertically */
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 50px;
+    width: 610px;
+    height: 800px;
+    position: relative;
+}
+
+.polaroid1 {
+    display: inline-block;
+    border: 30px solid #06345F;
+    border-bottom-width: 95px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: rotate(-18deg);
+    max-width: 100%;
+    height: auto;
+    background-color: 06345F;
+    right: 10%;
+    position: relative;
+}
+
+.polaroid2 {
+    display: inline-block;
+    border: 30px solid #06345F;
+    border-bottom-width: 95px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: rotate(-5deg);
+    max-width: 100%;
+    height: auto;
+    top: -60%;
+    position: relative;
+    background-color: #06345F;
+}
+
+.container-mission {
+    width: 100%;
+    height: 700px;
+}
+
+.C {
+    letter-spacing: 10px;
+    font-size: 210px;
+    color: #F2F2F2;
+    font-family: 'Old Standard TT', serif;
+    ;
+}
+
+.text1 {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Kalam', cursive;
+    z-index: 2;
+    top: -51%;
+    position: relative;
+    color: #06345F;
+    transform: rotate(-4deg);
+    left: -14%;
+}
+
+.text2 {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Kalam', cursive;
+    z-index: 2;
+    top: -53%;
+    position: relative;
+    color: #06345F;
+    transform: rotate(-4deg);
+    left: -1%;
+}
+
+.text3 {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Kalam', cursive;
+    z-index: 2;
+    top: -54%;
+    position: relative;
+    color: #06345F;
+    left: 10%;
+    transform: rotate(-4deg);
+
+}
+
+
+h3 {
+    font-family: 'Baskervville', serif;
+    font-size: 80px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.languages {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    text-align: center;
+    position: relative;
+    margin-top: -90%;
+}
+
+#italic {
+    font-style: italic;
+}
+
+.level {
+    font-family: 'instrument serif', serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#rank {
+    font-family: 'Koulen', sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+    color: #06345F;
+
+}
+
+#lang {
+    font-family: 'Koulen', sans-serif;
+    font-size: 31px;
+}
+
+.first-lang,
+.second-lang,
+.third-lang {
+    font-family: 'Junge', sans-serif;
+    font-size: 60px;
+}
+
+.line {
+    width: 2px;
+    height: 150px;
+    border-left: 2px solid black;
+    /* Corrected space in '2 px' and added color */
+    left: 50%;
+    top: 20px;
+    position: relative;
+}
+
+.fluency {
+    top: 30px;
+    position: relative;
+    font-size: 29px;
+    color: #075789;
+    font-family: 'HOS', sans-serif;
+    font-weight: lighter;
+
+}
+
+.birdie {
+    position: absolute;
+    top: -190px;
+}
+
+.animation {
+    position: relative;
+    z-index: 200;
+}
+
+.container-lang {
+    width: auto;
+    height: 1000px;
+    padding-bottom: 4%;
+}
+
+.container-background {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.paper {
+    width: 780px;
+    height: auto;
+    left: 50px;
+    position: relative;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    padding-top: 20%;
+}
+
+
+.opening {
+    transform: scale(1.2) rotate(15deg);
+    /* Example of zooming and rotating */
+    opacity: 0;
+    /* Fades out */
+}
+
+.lanyard {
+    animation: sway 3s infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    transform-origin: top;
+    position: relative;
+}
+
+
+@keyframes sway {
+    0% {
+        transform: rotate(8deg);
+    }
+
+    50% {
+        transform: rotate(-8deg);
+    }
+
+    100% {
+        transform: rotate(8deg);
+    }
+}
+
+.container-work {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+}
+
+.projects {
+    left: 5%;
+    position: relative;
+    height: auto;
+    margin-bottom: 20px;
+    /* Adds space between the flag and grid */
+}
+
+.skill {
+    width: 800px;
+    height: auto;
+    left: 8%;
+    position: relative;
+    padding-top: 20%;
+
+}
+
+.technical {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Creates two equal-width columns */
+
+    top: 20%;
+    position: relative;
+}
+
+
+#heading {
+    font-family: 'Jacques Francois', serif;
+    font-size: 90px;
+    letter-spacing: 4px;
+    text-align: left;
+    position: relative;
+    bottom: 35px;
+}
+
+
+.word {
+    left: 14%;
+    position: relative;
+    text-align: left;
+    font-size: 55px;
+    font-family: 'Instrument Serif', serif;
+    letter-spacing: 3px;
+    top: 30%;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns */
+    grid-template-rows: repeat(3, auto);
+    /* 3 rows */
+    gap: 10px;
+    /* Adjust spacing between images */
+}
+
+#slash {
+    position: relative;
+    display: inline-block;
+}
+
+#slash::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: #06345F;
+    border-radius: 70%;
+    transform: rotate(-10deg);
+}
+
+
+.replacement {
+    display: inline-block;
+    text-align: center;
+    font-size: 35px;
+    color: #06345F;
+    position: absolute;
+    top: 50px;
+    left: 0; 
+    width: 100%;
+    font-family: 'HOS', cursive;
+    transform: rotate(-2deg);
+}
+
+
+
+
+
+.skill {
+    cursor: pointer;
+}
+
+
+
+button {
+    background-color: #06345F; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding around button text */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    margin-bottom: 20px; /* Margin below the button */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+#gridBox {
+    position: absolute; /* Set position to absolute for dragging */
+    padding: 20px; /* Padding inside the popups */
+    background-color: #06345F; /* Background color of the popups */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    border-radius: 20px; /* Rounded corners */
+    width: 750px; /* Fixed width for consistency */
+    display: none; /* Initially hidden */
+    height: 400px;
+    z-index: 1000;
+    
+
+}
+
+#gridGrabber1 {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    gap: 10px; /* Add space between the close icon and text */
+}
+#gridBox2 {
+    position: absolute; /* Set position to absolute for dragging */
+    padding: 20px; /* Padding inside the popups */
+    background-color: #ECE8DF; /* Background color of the popups */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    border-radius: 20px; /* Rounded corners */
+    width: 750px; /* Fixed width for consistency */
+    display: none;
+    height: 400px;
+    z-index: 1000;
+}
+#gridGrabber2 {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    gap: 10px; /* Add space between the close icon and text */
+}
+
+.gridGrabber {
+    cursor: move; /* Change cursor to move for dragging */
+    display: block; /* Ensure the grabber is block for easy clicking */
+    margin-bottom: 10px; /* Space below the grabber */
+}
+
+.boxCloser {
+    width: 35px; /* Set width for close button */
+    height: 35px; /* Set height for close button */
+    fill: none; /* No fill */
+    stroke: #c4c4c4; /* Color of the close icon */
+    transition: stroke 0.3s; /* Smooth transition for hover */
+    position: relative;
+    left: 95%;
+    border-radius: 20px;
+}
+
+.boxCloser:hover {
+    stroke: #ff4d4d; /* Change color on hover */
+}
+
+.myProjects{
+   width: 1500px;
+   height: auto;
+   left: 6%;
+   position: relative;
+}
+
+
+#titleskills2 {
+    font-family: 'Imbue', serif;
+    font-size: 59px; /* adjust size as needed */
+    font-weight: 700; /* adjust weight as needed */
+    position: relative;
+width: 500px;
+left: -4%;
+}
+
+
+#titleskills2::after {
+    content: "";
+    display: block;
+    width: 750px; /* adjust the width as needed */
+    height: 1px; /* adjust the thickness of the line */
+    background-color: #000; /* change color as needed */
+    margin-top: 8px; /* adjust spacing between text and line */
+}
+
+#titleskills1 {
+    font-family: 'Imbue', serif;
+    font-size: 59px; /* adjust size as needed */
+    font-weight: 700; /* adjust weight as needed */
+    position: relative;
+width: 500px;
+left: -4%;
+color: #fff;
+}
+
+
+#titleskills1::after {
+    content: "";
+    display: block;
+    width: 750px; /* adjust the width as needed */
+    height: 1px; /* adjust the thickness of the line */
+    background-color: #fff; /* change color as needed */
+    margin-top: 8px; /* adjust spacing between text and line */
+}
+
+.codingSkills{
+    width: 600px;
+    height: auto;
+    position: absolute;
+top:24%;
+left: 10%;
+
+}
+
+.softwareSkills{
+    width: 600px;
+    height: auto;
+    position: absolute;
+top:24%;
+left: 10%; 
+}
+
+.question{
+    font-family: 'inter',sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #1E476C;
+}
+
+.talk{
+    font-family:'Jost',sans-serif ;
+    font-size: 110px;
+    color: #124678;
+    
+}
+
+.contact{
+    position: relative;
+    padding-top:20%;
+    padding-left: 2%;
+}
+
+.arrow{
+    color:#06345F;
+
+}

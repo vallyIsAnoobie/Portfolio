@@ -1,0 +1,163 @@
+body {
+    background-color: #06345F;
+    height: 100%;
+    animation: fadeIn 1s ease forwards; /* Apply the animation to the body */
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start fully transparent */
+        transform: translateY(20px); /* Move slightly down */
+    }
+    100% {
+        opacity: 1; /* End fully opaque */
+        transform: translateY(0); /* End in original position */
+    }
+}
+
+main {
+    border: #fff 2px solid;
+    padding: 20px;
+    margin: 40px;
+
+}
+
+header {
+    height: 120px;
+    width: 100%;
+}
+
+
+
+
+@font-face {
+    font-family: 'Ham is Cute';
+    src: url('HamIsCute.ttf');
+    /* Corrected file extension */
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'daniel';
+    src: url(daniel.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    font-family: 'Ham is Cute', sans-serif;
+    color: rgba(255, 255, 255, 0.5); /* White color with 50% opacity */
+}
+
+.first, .second, .third, .fourth {
+    position: relative; 
+    margin-bottom: 20px; 
+    font-size: 139px;
+    cursor: pointer;
+    font-family: 'Ham is Cute', sans-serif;
+    transition: background-color 0.6s; /* Smooth transition for background color */
+}
+
+
+
+
+.first::before, .second::before, .third::before, .fourth::before {
+    font-size: 70px;
+    font-family: 'Joti One', sans-serif;
+}
+
+.first::before{
+    right:10px;
+    content: "01";
+    top:-50px;
+    position: relative;
+}
+
+.second::before {
+    content: "02"; 
+    right:10px;
+    top:-50px;
+    position: relative;
+}
+
+.third::before {
+    content: "03"; 
+    right:10px;
+    top:-50px;
+    position: relative;
+}
+
+.fourth::before {
+    content: "04"; 
+    right:10px;
+    top:-50px;
+    position: relative;
+}
+
+.first:hover, .second:hover, .third:hover, .fourth:hover {
+    color: white; /* Change text color to black for contrast */
+}
+
+
+
+
+
+.line-top {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    top: 25px; 
+    position: absolute;
+    transform: rotate(45deg);
+
+
+}
+
+.line-bottom {
+    top: 25px; 
+    height: 3px;
+    position: absolute;
+    width: 30px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+
+}
+
+.nav-icon.open .line-top {
+    transform: rotate(0deg);
+    top: 20px; 
+    transition: all 0.5s ease;
+    position: absolute;
+}
+
+.nav-icon.open .line-bottom {
+    transform: rotate(0deg);
+    top: 30px;
+    transition: all 0.5s ease;
+    position:absolute;
+
+}
+
+
+
+.nav-icon {
+    height: 30px; 
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+a{
+text-decoration: none;
+color: inherit;
+}
