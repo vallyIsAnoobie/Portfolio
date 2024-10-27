@@ -3,298 +3,262 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <style>
+    <link href="https://fonts.googleapis.com/css2?family=Joti+One&display=swap" rel="stylesheet">
 
-input::placeholder,
-textarea::placeholder,
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder,
-input::-moz-placeholder,
-textarea::-moz-placeholder,
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-    font-family: 'Courier New', Courier, monospace !important;
-}
-
-    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    font-family: 'Courier New', Courier, monospace;
-    color: #000000;
-    font-size: 0.875em;
-    }
-
-    input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-    color: #ffffff;
-    font-size: 0.875em;
-    }
-
-    input::-moz-placeholder, textarea::-moz-placeholder {
-    color: #000000;
-    font-size: 0.875em;
-    }
-
-    input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-    color: #ffffff;
-    font-size: 0.875em;
-    }
-
-    input::placeholder, textarea::placeholder {
-    color: #000000;
-    font-size: 0.875em;
-    }
-
-    input:focus::placeholder, textarea::focus:placeholder {
-    color: #ffffff;
-    font-size: 0.875em;
-    }
-
-    input::-ms-placeholder, textarea::-ms-placeholder {
-    color: #000000;
-    font-size: 0.875em;
-    }
-
-    input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-    color: #ffffff;
-    
-    }
-
-    /* on hover placeholder */
-
-    input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
-    color: #808080;
-    font-size: 0.875em;
-    }
-
-    input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
-    color: #808080;
-    }
-
-    input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
-    color: #808080;
-    font-size: 0.875em;
-    }
-
-    input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
-    color: #808080;
-    }
-
-    input:hover::placeholder, textarea:hover::placeholder {
-    color: #808080;
-    font-size: 0.875em;
-    }
-
-    input:hover:focus::placeholder, textarea:hover:focus::placeholder {
-    color: #808080;
-    }
-
-    input:hover::placeholder, textarea:hover::placeholder {
-    color: #808080;
-    font-size: 0.875em;
-    }
-
-    input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
-    color: #808080;
-    font-size: 0.875em;
-    }
-    
-
-
-.titleheader {
-  position: relative;
-  margin: 100px 0 25px 0;
-  font-size: 2.3em;
-  text-align: center;
-  letter-spacing: 7px;
-}
-
-#form {
-  position: relative;
-  width: 500px;
-  margin: 50px auto 100px auto;
-}
-input {
-  font-size: 0.875em;
-  width: 470px;
-  height: 50px;
-  padding: 0px 15px 0px 15px;
-  
-  background: transparent;
-  outline: none;
-  color: #000000;
-  
-  border: solid 1px #000000;
-  border-bottom: none;
-  
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-}
-
-input:hover {
-  background: #e0e0e0;
-}
-
-textarea {
-  width: 470px;
-  max-width: 470px;
-  height: 110px;
-  max-height: 110px;
-  padding: 15px;
-  
-  background: transparent;
-  outline: none;
-  
-  color: #000000;
-  font-size: 0.875em;
-  font-family: 'Courier New', Courier, monospace;
-  
-  border: solid 1px #000000;
-  
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-}
-
-textarea:hover {
-  background: #e0e0e0;
-}
-
-#submit {
-  width: 502px;
-  
-  padding: 0;
-  margin: -5px 0px 0px 0px;
-
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.875em;
-  color: #000000;
-  background: transparent;
-  
-  outline: none;
-  cursor: pointer;
-  
-  border: solid 1px #000000;
-  border-top: none;
-  
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-}
-
-#submit:hover {
-  background: #e0e0e0;
-}
-.c-main-menu__socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 0;
-  margin-top: 20px ; /* Adjust top and bottom margin as needed */
-}
-
-.c-main-menu-social__link li {
-  margin: 0 10px; /* Adds space between icons */
-}
-/* Optional: Add hover effect */
-.c-main-menu-social__link:hover {
-  color: #808080; /* Adjust hover color as needed */
-}
-
-    </style>
 </head>
 <body>
-    <div class="c-magic-area c-magic-area--menu" data-target-class=".c-main-menu__link" data-tween-back="true" aria-hidden="true"></div>
-    <div class="c-magic-area c-magic-area--menu" data-target-class=".c-main-menu-social__link" data-tween-back="false" aria-hidden="true"></div>
-
-    <main id="page" class="o-page">
-        <div class="loader-overlay" id="loaderOverlay">
-            <div class="loader" id="loader"></div>
-        </div>
-        <header class="o-header">
-            <h1 class="c-logo"><a class="c-logo__link" target="_blank">L1M1N4L</a></h1>
-            <nav class="c-main-menu" aria-labelledby="mainmenulabel">
-                <h2 id="mainmenulabel" class="u-visually-hidden">Main Menu</h2>
-                <ul class="c-main-menu__list">
-                    <li><a class="c-main-menu__link" href="index.html">Home</a></li>
-                    <li><a class="c-main-menu__link" href="portfolio.html">Portfolio</a></li>
-                    <li><a class="c-main-menu__link" href="writings.html">Writings</a></li>
-                    <li><a class="is-magic-active c-main-menu__link" href="#" aria-current="page">Contact</a></li>
-                </ul>
-            </nav>
+    
+    <main>
+        <header>
+            <div class="nav-icon" id="nav-icon">
+                <div class="line-top"></div>
+                <div class="line-bottom"></div>
+            </div> 
         </header>
-        <header class="titleheader">Let's Connect</header>
-        <ul class="c-main-menu__socials">
-            <li><a href="https://github.com/L1M1N4L" class="c-main-menu-social__link" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://x.com/L1M1N4LLL" class="c-main-menu-social__link" target="_blank"><i class="fab fa-x"></i></a></li>
-            <li><a href="https://www.instagram.com/l1m1n4lll" class="c-main-menu-social__link" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://discord.gg/DGKbuYM5B5" class="c-main-menu-social__link" target="_blank"><i class="fab fa-discord"></i></a></li>
-        </ul>
 
-    <form id="form" class="topBefore">
-            
-              <input id="name" type="text" placeholder="Name">
-              <input id="email" type="text" placeholder="E-Mail">
-              <textarea id="message" type="text" placeholder="Message"></textarea>
-        <input id="submit" type="submit" value="GO!">
-      
-    </form>
+
+              <h1>GET IN TOUCH</h1>
+                  <p>Ask me anything or say hi...</p>
+                  <div class="contact-details">
+                      <p>081906756690</p>
+                      <p>valencia.hartono7@gmail.com</p>
+                  </div>
+              </div>
+  
+              <form>
+                  <div class="form-group">
+                      <input type="text" placeholder="Name" required>
+                  </div>
+  
+                  <div class="form-group">
+                      <input type="email" placeholder="Email" required>
+                  </div>
+  
+                  <div class="form-group">
+                      <textarea placeholder="Message" required></textarea>
+                  </div>
+  
+                  <button type="submit">Send Message</button>
+              </form>
+         
+          
+
+
     </main>
-    <!-- GSAP CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <!-- Lodash CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
-    <!-- VanillaTilt CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-    <!-- Your custom script -->
-    <script src="script.js" defer></script>
-    <script>
-document.addEventListener('DOMContentLoaded', function() {
-  var loaderOverlay = document.getElementById('loaderOverlay');
-  var content = document.getElementById('content');
 
-  // Show loader overlay
-  loaderOverlay.style.display = 'flex';
+    <style>
+    body {
+    background-color: #06345F;
+    height: 100%;
+    animation: fadeIn 1s ease forwards; /* Apply the animation to the body */
 
-  // Simulate content loading delay
-  setTimeout(function() {
-    // Hide loader overlay
-    loaderOverlay.style.display = 'none';
+}
 
-    // Show content
-    content.style.display = 'block';
-  }, 2300); // Simulate 3 seconds loading time
-});
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start fully transparent */
+        transform: translateY(20px); /* Move slightly down */
+    }
+    100% {
+        opacity: 1; /* End fully opaque */
+        transform: translateY(0); /* End in original position */
+    }
+}
+
+main {
+    border: #fff 2px solid;
+    padding: 20px;
+    margin: 40px;
+
+}
+
+header {
+    height: 120px;
+    width: 100%;
+}
 
 
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
-        <script>
-            document.getElementById('form').addEventListener('submit', function(event) {
-                event.preventDefault();
+.line-top {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    top: 25px; 
+    position: absolute;
+    transform: rotate(45deg);
+
+
+}
+
+.line-bottom {
+    top: 25px; 
+    height: 3px;
+    position: absolute;
+    width: 30px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+
+}
+
+.nav-icon.open .line-top {
+    transform: rotate(0deg);
+    top: 20px; 
+    transition: all 0.5s ease;
+    position: absolute;
+}
+
+.nav-icon.open .line-bottom {
+    transform: rotate(0deg);
+    top: 30px;
+    transition: all 0.5s ease;
+    position:absolute;
+
+}
+
+
+
+.nav-icon {
+    height: 30px; 
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+a{
+text-decoration: none;
+color: inherit;
+}
+
+@font-face {
+    font-family: 'Ham is Cute';
+    src: url('HamIsCute.ttf');
+    /* Corrected file extension */
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'daniel';
+    src: url(daniel.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    font-family: 'Ham is Cute', sans-serif;
+    color: rgba(255, 255, 255, 0.5); /* White color with 50% opacity */
+}
+
+
+     h1 {
+        font-size: 58px;
+        font-weight: 300;
+        margin-bottom: 16px;
+        letter-spacing: 2px;
+        color: #ffffff;
+        font-family:'Kantumruy Pro',sans-serif ;
+    }
+
+     p {
+        color: #ffffff;
+        font-size: 16px;
+        opacity: 0.9;
+        margin-bottom: 24px;
+        font-family: 'Kantumruy Pro',sans-serif;
+    }
+
+    .contact-details {
+        margin-top: 20px;
+        font-size: 16px;
+        opacity: 0.9;
+    }
+
+    .contact-details p {
+        margin-bottom: 8px;
+    }
+
+ 
+    form {
+        margin-top: 40px;
+        max-width: 600px;
+    }
+
+    .form-group {
+        margin-bottom: 24px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 0;
+        background-color: transparent;
+        color: #ffffff;
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+        outline: none;
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    textarea {
+        height: 120px;
+        resize: vertical;
+    }
+
+    ::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    button {
+        background-color: transparent;
+        color: #ffffff;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 12px 32px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px #002042 inset !important;
+        -webkit-text-fill-color: white !important;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 40px 20px;
+        }
         
-                const formData = {
-                    name: this.name.value,
-                    email: this.email.value,
-                    message: this.message.value
-                };
-                emailjs.init('RWvHn3Ui2ppUjdlHs');
-                emailjs.send('service_anok4ht', 'template_y9zt5p8', formData)
-                    .then(function(response) {
-                        console.log('SUCCESS!', response.status, response.text);
-                        alert('Message sent successfully!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                        alert('Failed to send message.');
-                    });
-            });
+        .header h1 {
+            font-size: 36px;
+        }
         
-        </script>
+        .hamburger {
+            right: 20px;
+        }
+</style>
+<script type="module" src="scripts.js"></script>
+
 </body>
-
 </html>

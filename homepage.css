@@ -782,5 +782,29 @@ left: 10%;
 
 .arrow{
     color:#06345F;
+position: absolute;
+left: 89%;
+bottom: -50px;
 
+
+}
+
+
+a{
+    text-decoration: none;
+}
+
+#contactme .contact:hover .question,
+#contactme .contact:hover .talk {
+    color: #256991; /* Change to your desired text color */
+}
+
+/* Change SVG stroke color on hover */
+#contactme .contact:hover .arrow path {
+    stroke: #256991; /* Change to your desired arrow color */
+}
+
+.myProjects{
+    top:20%;
+    padding-bottom:20%;
 }
