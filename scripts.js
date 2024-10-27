@@ -6,7 +6,7 @@ navIcon2.addEventListener('click', () => {
 
     setTimeout(() => {
         // Assuming you want to navigate to the homepage after clicking
-        window.location.href = 'homepage.html';
+        window.location.href = 'index.html';
     }, 400);
 });
 
